@@ -5,11 +5,15 @@
   background-image: url(../images/dictionary.jpg);
   background-size: cover;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
 
+.search-form {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1em;
+  gap: 20px;
 }
 
 .search-input {
