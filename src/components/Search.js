@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "./Search.css";
 import axios from "axios";
+import Results from "./Results";
 
 export default function Search() {
   const [searchedWord, setSearchedWord] = useState("");
+  const [results, setResults] = useState({});
 
   function handleSearchChange(event) {
     const word = event.target.value;
@@ -11,7 +13,7 @@ export default function Search() {
   }
 
   function handleResponse(response) {
-    console.log(response.data[0]);
+    setResults(response.data[0]);
   }
 
   function search(event) {
@@ -21,7 +23,7 @@ export default function Search() {
     axios.get(url).then(handleResponse);
   }
   return (
-    <header className="Search">
+    <div className="Search">
       <form onSubmit={search} className="search-form">
         <input
           type="text"
@@ -31,6 +33,7 @@ export default function Search() {
         />
         <input type="submit" value="GO" className="submit-button" />
       </form>
-    </header>
+      <Results results={results} />
+    </div>
   );
 }
