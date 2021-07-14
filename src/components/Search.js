@@ -5,7 +5,7 @@ import Results from "./Results";
 
 export default function Search() {
   const [searchedWord, setSearchedWord] = useState("");
-  const [results, setResults] = useState({});
+  const [results, setResults] = useState(null);
 
   function handleSearchChange(event) {
     const word = event.target.value;
