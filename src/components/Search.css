@@ -2,11 +2,24 @@
   height: 100vh;
   width: 100%;
   max-width: 1400px;
-  background-image: url(../images/dictionary.jpg);
   background-size: cover;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+}
+
+.Search::after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/dictionary.jpg);
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
 }
 
 .search-form {
