@@ -12,7 +12,7 @@ export default function Results({ results }) {
             <div key={index}>
               <Phonetic phonetic={phonetic} />
             </div>
-          )
+          );
         })}
         {results.meanings.map((meaning, index) => {
           return (
