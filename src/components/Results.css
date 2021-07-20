@@ -1,0 +1,16 @@
+.Results {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.meanings-list {
+  padding: 0;
+}
+
+.phonetic-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

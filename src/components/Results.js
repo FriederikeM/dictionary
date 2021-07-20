@@ -7,16 +7,18 @@ export default function Results({ results }) {
     return (
       <div className="Results">
         <h1 className="word">{results.word}</h1>
-        {results.phonetics.map((phonetic, index) => {
-          return (
-            <div key={index}>
-              <Phonetic phonetic={phonetic} />
-            </div>
-          );
-        })}
+        <section className="phonetic-section">
+          {results.phonetics.map((phonetic, index) => {
+            return (
+              <div key={index}>
+                <Phonetic phonetic={phonetic} />
+              </div>
+            );
+          })}
+        </section>
         {results.meanings.map((meaning, index) => {
           return (
-            <ul key={index}>
+            <ul key={index} className="meanings-list">
               <Meaning meaning={meaning} />
             </ul>
           );

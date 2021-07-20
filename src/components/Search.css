@@ -5,7 +5,8 @@
   background-size: cover;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 10vw;
 }
 
 .Search::after {
@@ -19,7 +20,7 @@
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .search-form {
