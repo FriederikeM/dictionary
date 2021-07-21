@@ -31,7 +31,7 @@ export default function Search({ defaultKeyword }) {
     axios.get(url).then(handleResponse);
 
     const pexelsApiKey = process.env.REACT_APP_API_KEY;
-    const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${searchedWord}`;
+    const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${searchedWord}&per_page=12`;
     axios
       .get(pexelsApiUrl, {
         headers: {
