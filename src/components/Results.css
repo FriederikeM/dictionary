@@ -5,6 +5,12 @@
   gap: 3vh;
 }
 
+.written-phonetic {
+  font-weight: lighter;
+  padding-top: 5px;
+  font-size: 1.7rem;
+}
+
 .meanings-list {
   padding: 0;
 }

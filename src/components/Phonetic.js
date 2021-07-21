@@ -1,12 +1,14 @@
 import "./Phonetic.css";
+import { AiFillPlayCircle } from "react-icons/ai";
 
 export default function Phonetic({ phonetic }) {
+  const audio = new Audio(phonetic.audio);
+  function handleIconClicked() {
+    audio.play();
+  }
   return (
     <div className="Phonetic">
-      <a href={phonetic.audio} target="_blank" rel="noreferrer">
-        Listen
-      </a>
-      <p>{phonetic.text}</p>
+      <AiFillPlayCircle className="play-icon" onClick={handleIconClicked} />
     </div>
   );
 }

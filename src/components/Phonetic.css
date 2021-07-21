@@ -1,0 +1,11 @@
+.play-icon {
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.play-icon:hover {
+  color: rgba(255, 255, 255);
+  background-color: rgba(0, 0, 0);
+}

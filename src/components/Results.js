@@ -7,7 +7,10 @@ export default function Results({ results, photos, searchedWord }) {
   if (results) {
     return (
       <div className="Results">
-        <h1 className="word">{results.word}</h1>
+        <div className="spelling">
+          <h1 className="word">{results.word}</h1>
+          <h2 className="written-phonetic">{results.phonetics[0].text}</h2>
+        </div>
         <section className="phonetic-section">
           {results.phonetics.map((phonetic, index) => {
             return (
