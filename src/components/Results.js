@@ -4,7 +4,6 @@ import Phonetic from "./Phonetic";
 import Photos from "./Photos";
 
 export default function Results({ results, photos, searchedWord }) {
-  console.log(results.phonetics[0].audio);
   if (results) {
     return (
       <div className="Results">
