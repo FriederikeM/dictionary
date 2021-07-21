@@ -1,9 +1,18 @@
-.Photos {
+/* .Photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+} */
+
+.photos-wrapper {
+  padding: 3rem;
   display: grid;
   max-height: 400px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, 230px);
   column-gap: 2rem;
   row-gap: 2rem;
+  max-width: 1200px;
 }
 
 .example-image {
