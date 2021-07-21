@@ -41,6 +41,7 @@
 
 .search-input {
   width: 15vw;
+  min-width: 240px;
   padding: 8px;
   border: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
