@@ -2,7 +2,7 @@ import "./Phonetic.css";
 import { AiFillPlayCircle } from "react-icons/ai";
 
 export default function Phonetic({ phonetic }) {
-  const audio = new Audio(phonetic.audio);
+  const audio = new Audio(phonetic);
   function handleIconClicked() {
     audio.play();
   }

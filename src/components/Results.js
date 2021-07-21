@@ -4,6 +4,7 @@ import Phonetic from "./Phonetic";
 import Photos from "./Photos";
 
 export default function Results({ results, photos, searchedWord }) {
+  console.log(results.phonetics[0].audio);
   if (results) {
     return (
       <div className="Results">
@@ -12,13 +13,7 @@ export default function Results({ results, photos, searchedWord }) {
           <h2 className="written-phonetic">{results.phonetics[0].text}</h2>
         </div>
         <section className="phonetic-section">
-          {results.phonetics.map((phonetic, index) => {
-            return (
-              <div key={index}>
-                <Phonetic phonetic={phonetic} />
-              </div>
-            );
-          })}
+          <Phonetic phonetic={results.phonetics[0].audio} />
         </section>
         {results.meanings.map((meaning, index) => {
           return (
