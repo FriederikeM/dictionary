@@ -1,8 +1,9 @@
 import Meaning from "./Meaning";
 import "./Results.css";
 import Phonetic from "./Phonetic";
+import Photos from "./Photos";
 
-export default function Results({ results }) {
+export default function Results({ results, photos, searchedWord }) {
   if (results) {
     return (
       <div className="Results">
@@ -23,6 +24,7 @@ export default function Results({ results }) {
             </ul>
           );
         })}
+        <Photos photos={photos} searchedWord={searchedWord} />
       </div>
     );
   } else {

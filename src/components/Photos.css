@@ -1,0 +1,13 @@
+.Photos {
+  display: grid;
+  max-height: 400px;
+  grid-template-columns: auto auto auto;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.example-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
