@@ -7,12 +7,16 @@ export default function Photos({ photos, searchedWord }) {
         <div className="photos-wrapper">
           {photos.map((photo, index) => {
             return (
-              <a href={photo.src.original} target="_blank" rel="noreferrer">
+              <a
+                href={photo.src.original}
+                target="_blank"
+                rel="noreferrer"
+                key={index}
+              >
                 <img
                   src={photo.src.landscape}
                   alt={searchedWord}
                   className="example-image"
-                  key={index}
                 />
               </a>
             );
